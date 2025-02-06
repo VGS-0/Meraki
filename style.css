@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url(https://res.cloudinary.com/gimmersta-wallpaper/image/upload/c_fill,f_auto,fl_progressive,q_auto,h_1200/v1718624610/articles/RP5094GR07R_product.jpg);
+    font-family: "Lora", serif;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+p{
+    display:inline-block;
+    font-size:20px;
+    color:#90A176;
+    margin: 10px;
+    padding: 5px;
+
+}
+
+header{
+    padding: 30px 25px;
+    margin: 3%;
+    text-align:center;
+    background-color: #F8EDDA;
+    border-radius:10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header div{
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0);
+}
+
+.container-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.Productos{
+    width: 22%;
+    border:1px solid #ddd;
+    border-radius: 10px;
+    background-color: #F8EDDA;
+    padding:15px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Productos img{
+    width:100%;
+    border-radius: 10px;
+}
+
+.Productos h3{
+    margin:10px 0;
+    font-size: 18px;
+    color:#65754D;
+}
+
+.Productos p{
+    font-size: 14px;
+    color:#90A176;
+}
+
+.Productos .valor{
+    font-size: 20px;
+    color:#90A176;
+    font-weight: bold;
+}
+
+h1{
+    padding: 10px 12px;
+    margin: 5px;
+    color:#90A176;
+}
+
+h2{
+    color:#65754D;
+    margin: 1%;
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+    color:#65754D;
+    justify-content:space-around;
+    margin:0px 25px;
+}
+
+footer{
+    margin: 3%;
+    text-align: center;
+    background-color: #F8EDDA;
+    border-radius:10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+div {
+    margin:3%;
+    padding:10px;
+    background-color: #F8EDDA;
+    border-radius:10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+#off1{
+    background-color:rgba(0, 0, 0, 0);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0);
+}
+span{
+    margin:3%;
+    padding:10px;
+    background-color: #F8EDDA;
+    border-radius:10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+div{
+    margin-top:1%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.a2{
+     color:#65754D;
+}
+
+.logo {
+    display: flex;               
+    justify-content: center;     
+    align-items: center;         
+    height: 100px;               
+}
+  .logo img {
+    width: 175px;    
+    height: auto;    
+  }
+  
