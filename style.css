@@ -14,7 +14,7 @@ body{
 
 p{
     display:inline-block;
-    font-size:20px;
+    font-size:auto;
     color:#90A176;
     margin: 10px;
     padding: 5px;
@@ -27,12 +27,21 @@ header{
     text-align:center;
     background-color: #F8EDDA;
     border-radius:10px;
+    justify-content: center;
+    align-items: center;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    animation: header 4s 1 forwards ease-out;
 }
 
 header div{
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0);
 }
+
+.animspan{
+    animation: span 3s 1 5s forwards ease-out;
+}
+
+
 
 .container-products {
     display: flex;
@@ -116,6 +125,7 @@ span{
     background-color: #F8EDDA;
     border-radius:10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    animation: h2 7s 5 alternate ease-out;
 }
 
 div{
@@ -138,3 +148,99 @@ div{
     height: auto;    
   }
   
+
+  @keyframes header {
+    0%{
+        align-items: center;
+        justify-content:center;
+        background-color: #F8EDDA;
+        width:0%;
+        
+    }
+    
+    50%{
+        align-items: center;
+        justify-content:center;
+        background-color:#65754D;
+        transform: rotate(0deg);
+        height:600;
+    }
+    
+
+    100%{
+        padding: 30px 25px;
+        margin: 3%;
+        width:91%;
+        justify-content:center;
+        align-items: center;
+        text-align:center;
+        background-color: #F8EDDA;
+        border-radius:10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+       
+    
+    }
+}
+
+header:hover{
+    animation-play-state:paused;
+}
+  
+@keyframes span {
+    0%{
+        align-items: center;
+        justify-content:center;
+        background-color: #F8EDDA;
+        transform: translate(500px);
+        width:50%;
+        
+    }
+    
+    50%{
+        align-items: center;
+        justify-content:center;
+        background-color:#65754D;
+        transform: rotate(0deg);
+        width:0%;
+        height:600;
+    }
+    
+
+    100%{
+        margin:3%;
+        padding:10px;
+        width:91%;
+        justify-content:center;
+        align-items: center;
+        text-align:center;
+        background-color: #F8EDDA;
+        border-radius:10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+       
+    
+    }
+}
+
+@keyframes  h2 {
+    0%{
+        background-color: #F8EDDA;
+    }
+    50%{
+        background-color:#90A176;
+    }
+    100%{
+        background-color:#F8EDDA;
+    }
+}
+
+
+span:hover{
+    animation-play-state:paused;
+}
+h2:hover{
+    animation-play-state: running;
+}
+.Productos:hover{
+    width: 24%;
+    height: 24%;
+}
