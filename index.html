@@ -9,13 +9,14 @@
 <body>
     
     <header>
-        <div class="logo"><img src="Logo meraki.svg" alt="LOGO"></div>
+        <div class="logo"><img src="./IMG/Logo meraki.svg" alt="LOGO"></div>
       
         <span class="animspan">
         <a href= "#pf">Preguntas frecuentes</a>
         <a href= "#crea">Perzonalizaciones</a>
         <a href= "#pred"> Productos</a>
         <a href= "#info">Contactanos</a>
+        <a href= "#Pedidos">Pedidos</a>
         </span>
     </header>
     <main>
@@ -141,11 +142,77 @@
             
                 <p id="p">Escribenos al numero #1 22 333 4 555 para mas informacion</p>
             
-            
                 <a href= "https://www.instagram.com/">Siguenos</a>
-                <a href= "https://mail.google.com/mail/u/0/#inbox">Pedidos Personalizados</a>
-            
+
         </footer>
+        <div class="wrapper" id="Pedidos">
+             <h2 class="wrapper__title">Ordena tu pedido</h2>
+            <form class="form" action="https://echo.htmlacademy.ru/">
+                <div class="user">
+                    <ul class="user-info">
+                        <li class="user-info__item">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" name="name" id="name" placeholder="Escriba su nombre completo">
+                        </li>
+                        <li class="user-info__item">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" placeholder="Escriba su correo electrónico">
+                        </li>
+                    </ul>
+                    <ul class="address-date">
+                        <li class="user-info__item">
+                            <label for="address">Su dirección</label>
+                            <input type="text" name="" id="address" placeholder="Escriba su dirección">
+                        </li>
+                        <li class="user-info__item">
+                            <label for="date">Designar fecha de entrega</label>
+                            <input type="date" name="" id="date">
+                        </li>
+                    </ul>
+                </div>
+                <div class="delivery">
+                    <ul class="delivery-info">
+                        <h3 class="delivery__title">Elija el tipo de entrega</h3>
+                        <li class="delivery-info__item">
+                            <label for="courier">Mensajero</label>
+                            <input type="radio" id="courier">
+                        </li>
+                        <li class="delivery-info__item">
+                            <label for="sam">Retiro presencial</label>
+                            <input type="radio" id="sam">
+                        </li>
+                        <li class="delivery-info__item">
+                            <label for="pochta">Mail</label>
+                            <input type="radio" id="pochta">
+                        </li>
+                    </ul>
+                    <ul class="delivery-info">
+                        <h3 class="delivery__title">Elige servicios adicionales</h3>
+                        <li class="delivery-info__item">
+                            <label for="dop1">Entrega de mensajería urgente</label>
+                            <input type="checkbox" name="" id="dop1">
+                        </li>
+                        <li class="delivery-info__item">
+                            <label for="dop2">Mayoria</label>
+                            <input type="checkbox" name="" id="dop2">
+                        </li>
+                    </ul>
+                </div>
+                    <div class="select">
+                        <h3 class="select__title">Deja un comentario y elige un tipo de pago</h3>
+                        <select name="" id="">
+                            <option>Online</option>
+                            <option>Cuotas</option>
+                            <option>Tarjeta al momento de la entrega</option>
+                            <option>Tarjeta al momento de la contraentrega</option>
+                        </select>
+
+                        <label for="comment">Deja un comentario aquí</label>
+                        <textarea name="" id="comment" cols="30" rows="10" placeholder="Tu comentario"></textarea>
+                    </div>
+                <button type="submit">Enviar</button>
+                
+            </form>
     
 </body>
 </html>
